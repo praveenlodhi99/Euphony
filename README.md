@@ -4,11 +4,28 @@
     - Tailwind CSS: Yes    
     - `src/` directory: Yes
     - App Router:  Yes
-    - import alias: N
+    - import alias: No
 
+2. Create directories
+    - components data utils (mkdir)
 
+3. Data directory (src/app/data)
+    - music_courses.json (touch)
 
+4. Components directory (src/app/components)
+    - Navbar.jsx (touch)
+        + Using a Library -> Aceternity UI -> Components -> Navbar Menu
+    - ui directory
+        + navbar-menu.tsx -> Add code from Navbar Menu in Aceternity UI Library
+    - Inside src/utils
+        + cn.ts -> Add code from Navbar Menu in Aceternity UI Library
 
+    * enable dark mode
+        + tailwind.config.ts -> darkMode: 'class'
+        + src/app/layout.tsx -> inside return value -> return (
+                                                                                <html lang="en" className="dark">
+                                                                                </html>
+                                                                            );
 
 
 
