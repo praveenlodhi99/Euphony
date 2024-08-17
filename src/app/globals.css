@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card {
+  @apply p-8 border border-custom-border/10 rounded-3xl shadow-custom max-w-xs w-[30vw] m-7;
+  height: auto;
+}
+
+
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;

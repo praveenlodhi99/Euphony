@@ -3,7 +3,6 @@
 import React from 'react'
 import Link from "next/link"
 import courseData from "@/data/music_courses.json"
-import VanillaTilt from '@/utils/vanilla-tilt'
 
 //making own datatype to datisfy typescript
 interface Course {
@@ -34,10 +33,10 @@ function FeaturedCourses() {
                 </div>
     
                 <div className='mt-10 text-black'>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center py-5 px-16">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center py-5 px-16  [mask-image:linear-gradient(to_bottom,transparent,white_15%,white_85%,transparent)]">
                         {featuredCourses.map((course: Course) => (
                             <div key={course.id} className="flex justify-center">
-                                <div className='bg-[#8EC5FC] bg-gradient-to-br from-[#85d1d4] to-[#717270] px-5 py-3 rounded-lg text-center shadow-[#b4b4b4] shadow-md opacity-90' >
+                                <div className='bg-[#8EC5FC] bg-gradient-to-br from-[#85d1d4] to-[#717270] px-5 py-3 rounded-lg text-center shadow-[#b4b4b4] shadow-md opacity-90 ' >
                                     <p className="text-2xl mb-2 underline font-semibold break-words">{course.title}</p>
                                     <p className="font-light mt-auto transition-all duration-100 ease-in-out break-words">{course.description}</p>
                                 </div>

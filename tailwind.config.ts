@@ -27,6 +27,13 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '1.5px 2px 10px rgba(234, 234, 234, 0.7)', // Custom shadow
+        'margin': '5'
+      },
+      colors: {
+        'custom-border': '#222222', // Custom border color
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
